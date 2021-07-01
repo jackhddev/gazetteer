@@ -1,0 +1,237 @@
+    html,
+    body,
+    #mapid {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    h1 {
+        margin: 0;
+        border: 0;
+    }
+    
+    #countryList {
+        font-size: 1.5vw;
+        padding: 2px;
+        display: inline;
+        position: relative;
+        left: 10%;
+        top: 2%;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: none;
+        font-family: 'Oswald', sans-serif;
+        width: 20%;
+        border-radius: 35px;
+        padding-left: 30px;
+    }
+    
+    #myModal {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    #myModal2 {
+        display: none;
+        position: absolute;
+        left: 40%;
+        top: 10%;
+        z-index: 999;
+        border-collapse: collapse;
+        width: 20%;
+        font-family: 'Oswald', sans-serif;
+        border: 1px solid rgb(104, 104, 104);
+    }
+    
+    #myModal3 {
+        display: none;
+        position: absolute;
+        left: 35%;
+        top: 10%;
+        z-index: 999;
+        border-collapse: collapse;
+        width: 30%;
+        font-family: 'Oswald', sans-serif;
+        border: 1px solid rgb(104, 104, 104);
+    }
+    
+    #myModal4 {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        left: 30%;
+        z-index: 1100;
+        top: 10%;
+        border-collapse: collapse;
+        width: 400px;
+        font-family: 'Oswald', sans-serif;
+        border: 1px solid rgb(104, 104, 104);
+    }
+    
+    #city {
+        background-color: #cfe0e8;
+    }
+    
+    td {
+        padding: 15px;
+    }
+    
+    .modal {
+        z-index: 2100;
+    }
+    
+    .modal-image,
+    #capital,
+    #continent,
+    #population,
+    #countrycode,
+    #wiki,
+    #currency,
+    #weatherimg,
+    #temp,
+    #total,
+    #deaths,
+    #active,
+    #critical,
+    #tests,
+    #recovered,
+    #dayimg,
+    #day2img {
+        text-align: right;
+    }
+    
+    #news1,
+    #news2,
+    #news3,
+    #news4,
+    #news5,
+    #news6,
+    #news7,
+    #news8,
+    #news9,
+    #news10 {
+        text-align: center;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #cfe0e8;
+        text-transform: capitalize;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #daebe8;
+        text-transform: capitalize;
+    }
+    
+    .modal-header {
+        background-color: #cfe0e8;
+    }
+    
+    .modal-body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    /*loader*/
+    
+    .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4588a2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3000;
+    }
+    
+    .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #Fff;
+        animation: loader 2s infinite ease;
+        z-index: 3000;
+    }
+    
+    .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: rgb(104, 227, 255);
+        animation: loader-inner 2s infinite ease-in;
+    }
+    
+    @keyframes loader {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(180deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        75% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes loader-inner {
+        0% {
+            height: 0%;
+        }
+        25% {
+            height: 0%;
+        }
+        50% {
+            height: 100%;
+        }
+        75% {
+            height: 100%;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    /*Buttons*/
+    
+     :root {
+        --color-icon: #090909;
+    }
+    
+    .icon-list {
+        width: 10%;
+        max-width: 50rem;
+        padding: 0 1.5rem;
+        position: absolute;
+        top: 25%;
+        left: -10px;
+    }
+    
+    .icon-item {
+        list-style: none;
+    }
+    
+    .icon-link {
+        display: inline-flex;
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--color-icon);
+        width: 1rem;
+        height: 8rem;
+        transition: .5s linear;
+        position: relative;
+        z-index: 2000;
+        margin: auto
+    }
